@@ -1,0 +1,22 @@
+{
+  "name": "archery",
+  "version": "1.0.0",
+  "description": "\"# Archery\" \r \"# Archery\" \r \"# Archery\" \r \"# Archery\" \r \"# Archery\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maddogmandosa/Archery.git"
+  },
+  "author": "The killer Joke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maddogmandosa/Archery/issues"
+  },
+  "homepage": "https://github.com/maddogmandosa/Archery#readme",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  }
+}
