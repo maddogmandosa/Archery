@@ -4,3 +4,5 @@ _site
 node_modules
 gemfile
 Gemfile.lock
+_posts
+
