@@ -2,7 +2,10 @@
   "name": "archery",
   "version": "1.0.0",
   "description": "\"# Archery\" \r \"# Archery\" \r \"# Archery\" \r \"# Archery\" \r \"# Archery\"",
-  "main": "index.js",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +19,13 @@
     "url": "https://github.com/maddogmandosa/Archery/issues"
   },
   "homepage": "https://github.com/maddogmandosa/Archery#readme",
-  "dependencies": {
-    "gulp": "^4.0.0"
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "child_process": "^1.0.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-exec": "^3.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
   }
 }
