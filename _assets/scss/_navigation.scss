@@ -1,4 +1,5 @@
 header{
+
     div{
         display: flex;
         flex-direction: row;
@@ -8,15 +9,65 @@ header{
     a{
         color: #fff;
     }
+    a:hover{
+        color: #00a;
+    }
 
     nav{
+        margin-right: auto;
+
         ul{
-            display: flex
+            padding-top: 1.5rem;
+            display: flex;
+
+            
         }
+
         li{
             list-style-type: none;
-            padding: 0.5rem
+            padding: 0.5rem;
+            
+            
         }
    
     }
+}
+
+#toggle-main-nav{display: none;}
+
+#toggle-main-nav-button{display: none}
+
+footer{
+    background: #444;
+    color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+
+    a{
+        color: #fff;
+    }
+
+    a:hover{
+        color: #00a;
+    }
+
+    nav{
+      
+        ul{
+            display: flex;
+             
+        }
+
+        li{
+            justify-content: right;
+            list-style-type: none;
+            padding: 0.5rem;
+            
+        }
+   
+    }
+
 }

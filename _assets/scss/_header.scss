@@ -1,7 +1,10 @@
 header {
+    padding: 1rem;
     background: #444;
     color: #fff;
-
+    .inner{
+        align-items: center;
+    }
     a, li{
         text-decoration: none;
     }
@@ -12,5 +15,7 @@ header {
         background-repeat: no-repeat;
         width: 80%;
         margin: 0 auto;
+        align-items: center;
+        
     }
 }

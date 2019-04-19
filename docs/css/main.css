@@ -56,8 +56,11 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 calc( var(--sizing-ws-base) / 3) 0; }
 
 header {
+  padding: 1rem;
   background: #444;
   color: #fff; }
+  header .inner {
+    align-items: center; }
   header a, header li {
     text-decoration: none; }
   header .site-header {
@@ -65,18 +68,19 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    align-items: center; }
 
 .button {
   display: inline-block;
   border-radius: 0.3em;
-  background: #900;
-  color: #EEE;
+  background: #00a;
+  color: #eee;
   padding: 0.5em 1em; }
 
 .button:hover {
-  background: #A00;
-  color: #FFF; }
+  background: #00a;
+  color: #fff; }
 
 .button-primary {
   font-size: 1.1em;
@@ -90,12 +94,42 @@ header div {
 header a {
   color: #fff; }
 
-header nav ul {
-  display: flex; }
+header a:hover {
+  color: #00a; }
 
-header nav li {
-  list-style-type: none;
-  padding: 0.5rem; }
+header nav {
+  margin-right: auto; }
+  header nav ul {
+    padding-top: 1.5rem;
+    display: flex; }
+  header nav li {
+    list-style-type: none;
+    padding: 0.5rem; }
+
+#toggle-main-nav {
+  display: none; }
+
+#toggle-main-nav-button {
+  display: none; }
+
+footer {
+  background: #444;
+  color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem; }
+  footer a {
+    color: #fff; }
+  footer a:hover {
+    color: #00a; }
+  footer nav ul {
+    display: flex; }
+  footer nav li {
+    justify-content: right;
+    list-style-type: none;
+    padding: 0.5rem; }
 
 .testimonials {
   padding: 2rem 1rem;
@@ -116,7 +150,7 @@ header nav li {
     .testimonials span.avatar {
       position: relative;
       width: 9rem;
-      background: #CCC;
+      background: #ccc;
       overflow: hidden;
       border-radius: 50%;
       margin: 0 auto;
@@ -143,6 +177,9 @@ header nav li {
       font-style: italic;
       opacity: 0.7; }
 
+section {
+  padding: 1rem; }
+
 .home-page {
   background-image: url(http://www.oldbasingarchers.co.uk/wp-content/uploads/slider5.jpg);
   color: #aaa;
@@ -151,3 +188,7 @@ header nav li {
   height: 50vh;
   min-height: 100px;
   padding-top: 5rem; }
+
+.info-bord {
+  display: flex;
+  justify-content: space-around; }

@@ -1,3 +1,6 @@
+section{
+    padding: 1rem;
+}
 .home-page{
     background-image: url(http://www.oldbasingarchers.co.uk/wp-content/uploads/slider5.jpg);
     color: #aaa;
@@ -6,4 +9,8 @@
     height: 50vh;
     min-height: 100px;
     padding-top: 5rem;
+}
+.info-bord{
+    display: flex;
+    justify-content: space-around;
 }
