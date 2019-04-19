@@ -10,7 +10,7 @@
   <body class="{{ page.body_class }} {{ page.title | slugify }}">
 
     <input type="checkbox" id="toggle-main-nav">
-    <header class="site-header banner {% if page.url == '/' %} size-large {% else %} size-small {% endif %}">
+    <header class="site-header banner {% if page.url == '/' %} size-large {% else %} size-small {% endif %}" style="background-image: url(http://www.oldbasingarchers.co.uk/wp-content/uploads/slider5.jpg)">
       <div class="inner">
         <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
         {% include navbar.html location="header" %}
