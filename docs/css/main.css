@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Amethysta");
+:root {
+  --sizing-fs-base: 12px;
+  --sizing-ws-base: 1.5em;
+  --sizing-lt-base: 3em;
+  --sizing-fs-tablet: 14px;
+  --sizing-fs-laptop: 16px;
+  --sizing-fs-desktop: 18px;
+  --sizing-fs-huge: 20px;
+  --color-main-bgrd: #FFF;
+  --color-main-text: #000;
+  --color-main-link: #900;
+  --color-basic-border: #000;
+  --sizing-basic-border: 1px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font: 16px/1.5; }
+
+/* Typography */
+html {
+  font: var(--sizing-fs-base)/1.5 "Amethysta", serif; }
+
+@media (min-width: 600px) {
+  html {
+    font-size: var(--sizing-fs-tablet); } }
+
+@media (min-width: 1260px) {
+  html {
+    font-size: var(--sizing-fs-laptop); } }
+
+@media (min-width: 1420px) {
+  html {
+    font-size: var(--sizing-fs-desktop); } }
+
+@media (min-width: 1660px) {
+  html {
+    font-size: var(--sizing-fs-huge); } }
+
+p, ul, ol, dl, table {
+  margin-bottom: var(--sizing-ws-base); }
+
+ul, ol {
+  padding-left: var(--sizing-ws-base); }
+
+h1, h2, h3, h4, h5 {
+  margin: 0 0 calc( var(--sizing-ws-base) / 3) 0; }
+
+header {
+  background: #444;
+  color: #fff; }
+  header a, header li {
+    text-decoration: none; }
+  header .site-header {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 auto; }
+
+.button {
+  display: inline-block;
+  border-radius: 0.3em;
+  background: #900;
+  color: #EEE;
+  padding: 0.5em 1em; }
+
+.button:hover {
+  background: #A00;
+  color: #FFF; }
+
+.button-primary {
+  font-size: 1.1em;
+  font-weight: bold; }
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+header a {
+  color: #fff; }
+
+header nav ul {
+  display: flex; }
+
+header nav li {
+  list-style-type: none;
+  padding: 0.5rem; }
+
+.testimonials {
+  padding: 2rem 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .testimonials li {
+    display: block;
+    list-style: none outside;
+    text-align: center; }
+  .testimonials a {
+    display: block;
+    text-decoration: none;
+    color: #333; }
+  .testimonials span {
+    display: block; }
+    .testimonials span.avatar {
+      position: relative;
+      width: 9rem;
+      background: #CCC;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 auto;
+      box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.3); }
+      .testimonials span.avatar img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+      .testimonials span.avatar:before {
+        display: block;
+        content: '';
+        padding-top: 100%; }
+    .testimonials span.name {
+      padding: 0.5rem 0;
+      margin-top: 0.5rem;
+      font-weight: bold; }
+    .testimonials span.jobtitle {
+      padding: 0.3rem 0 0.7rem;
+      font-style: italic;
+      opacity: 0.7; }
+
+.home-page {
+  background-image: url(http://www.oldbasingarchers.co.uk/wp-content/uploads/slider5.jpg);
+  color: #aaa;
+  text-align: center;
+  margin: 0 auto;
+  height: 50vh;
+  min-height: 100px;
+  padding-top: 5rem; }
