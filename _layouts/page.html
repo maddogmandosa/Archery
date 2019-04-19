@@ -12,7 +12,7 @@
     <input type="checkbox" id="toggle-main-nav">
     <header class="site-header banner {% if page.url == '/' %} size-large {% else %} size-small {% endif %}">
       <div class="inner">
-        <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
+        <h1 class="site-title"><a href="/{{ site.baseurl }}">{{ site.title }}</a></h1>
         {% include navbar.html location="header" %}
       </div>
     </header>
