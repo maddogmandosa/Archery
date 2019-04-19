@@ -10,7 +10,7 @@
   <body class="{{ page.body_class }} {{ page.title | slugify }}">
 
     <input type="checkbox" id="toggle-main-nav">
-    <header class="site-header banner {% if page.url == '/' %} size-large {% else %} size-small {% endif %}" style="background-image: url(https://images.unsplash.com/photo-1549383625-61676f103009?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);">
+    <header class="site-header banner {% if page.url == '/' %} size-large {% else %} size-small {% endif %}">
       <div class="inner">
         <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
         {% include navbar.html location="header" %}
