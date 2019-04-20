@@ -1,0 +1,25 @@
+.Shop-page{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    text-align: center;
+    div{ 
+        border: 1px solid #222;
+        margin: 1.5rem;
+        width: 27%;
+        img{
+            width: 30%;
+            height: auto;
+        }
+        a{
+            padding: 1rem;
+        }
+    }
+    div:hover{
+        transform:scale(1.2);
+    }
+    
+}
+

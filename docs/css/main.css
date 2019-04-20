@@ -192,3 +192,97 @@ section {
 .info-bord {
   display: flex;
   justify-content: space-around; }
+
+.lessons, .location {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2rem; }
+
+.lessons .item0 {
+  grid-area: header; }
+
+.lessons .item1 {
+  grid-area: day1; }
+
+.lessons .item2 {
+  grid-area: f1; }
+
+.lessons .item3 {
+  grid-area: s1; }
+
+.lessons .item4 {
+  grid-area: day2; }
+
+.lessons .item5 {
+  grid-area: f2; }
+
+.lessons .item6 {
+  grid-area: s2; }
+
+.lessons .item7 {
+  grid-area: day3; }
+
+.lessons .item8 {
+  grid-area: f3; }
+
+.lessons .item9 {
+  grid-area: s3; }
+
+.lessons .item10 {
+  grid-area: day4; }
+
+.lessons .item11 {
+  grid-area: f4; }
+
+.lessons .item12 {
+  grid-area: s4; }
+
+.lessons .item13 {
+  grid-area: day5; }
+
+.lessons .item14 {
+  grid-area: f5; }
+
+.lessons .item15 {
+  grid-area: d5; }
+
+.lessons .item16 {
+  grid-area: day6; }
+
+.lessons .item17 {
+  grid-area: f6; }
+
+.lessons div .schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'header header '
+ 'day1 f1 s1'
+ 'day2 f2 s2'
+ 'day3 f3 s3'
+ 'day4 f4 s4'
+ 'day5 f5 s5'
+ 'day6 f6 s6';
+  grid-gap: 5px; }
+  .lessons div .schedule div {
+    border: 1px solid #888; }
+
+.Shop-page {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center; }
+  .Shop-page div {
+    border: 1px solid #222;
+    margin: 1.5rem;
+    width: 27%; }
+    .Shop-page div img {
+      width: 30%;
+      height: auto; }
+    .Shop-page div a {
+      padding: 1rem; }
+  .Shop-page div:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }

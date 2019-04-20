@@ -1,0 +1,43 @@
+.lessons, .location{
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.lessons{
+    .item0{grid-area: header;}
+    .item1{grid-area: day1;}
+    .item2{grid-area: f1;}
+    .item3{grid-area: s1;}
+    .item4{grid-area: day2}
+    .item5{grid-area: f2;}
+    .item6{grid-area: s2;}
+    .item7{grid-area: day3;}
+    .item8{grid-area: f3;}
+    .item9{grid-area: s3;}
+    .item10{grid-area: day4}
+    .item11{grid-area: f4;}
+    .item12{grid-area: s4}
+    .item13{grid-area: day5}
+    .item14{grid-area: f5;}
+    .item15{grid-area: d5;}
+    .item16{grid-area: day6}
+    .item17{grid-area: f6;}
+    div .schedule{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-areas:
+        'header header '
+        'day1 f1 s1'
+        'day2 f2 s2'
+        'day3 f3 s3'
+        'day4 f4 s4'
+        'day5 f5 s5'
+        'day6 f6 s6';
+        grid-gap: 5px;
+
+        div{
+            border: 1px solid #888;
+        }
+    }
+}
