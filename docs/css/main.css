@@ -256,13 +256,7 @@ section {
 .lessons div .schedule {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 'header header '
- 'day1 f1 s1'
- 'day2 f2 s2'
- 'day3 f3 s3'
- 'day4 f4 s4'
- 'day5 f5 s5'
- 'day6 f6 s6';
+  grid-template-areas: 'header header ' 'day1 f1 s1' 'day2 f2 s2' 'day3 f3 s3' 'day4 f4 s4' 'day5 f5 s5' 'day6 f6 s6';
   grid-gap: 5px; }
   .lessons div .schedule div {
     border: 1px solid #888; }
@@ -275,6 +269,7 @@ section {
   justify-content: space-evenly;
   text-align: center; }
   .Shop-page div {
+    padding: 1rem;
     border: 1px solid #222;
     margin: 1.5rem;
     width: 27%; }
