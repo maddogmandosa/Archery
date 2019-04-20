@@ -10,7 +10,20 @@ section{
     min-height: 100px;
     padding-top: 5rem;
 }
-.info-bord{
-    display: flex;
-    justify-content: space-around;
+
+
+@media (min-width: 991px) {
+    .info-bord{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width:  990px ) {
+    .info-bord{
+        display: block;
+        margin: 0 auto;
+        div{
+            padding-top: 2rem;
+        }
+    }
 }

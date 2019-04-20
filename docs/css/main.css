@@ -64,12 +64,18 @@ header {
   header a, header li {
     text-decoration: none; }
   header .site-header {
-    display: flex;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 80%;
-    margin: 0 auto;
-    align-items: center; }
+    background-repeat: no-repeat; }
+  @media (min-width: 991px) {
+    header .site-header {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      align-items: center; } }
+  @media (max-width: 990px) {
+    header .site-header {
+      display: block;
+      margin: 0 auto; } }
 
 .button {
   display: inline-block;
@@ -189,9 +195,17 @@ section {
   min-height: 100px;
   padding-top: 5rem; }
 
-.info-bord {
-  display: flex;
-  justify-content: space-around; }
+@media (min-width: 991px) {
+  .info-bord {
+    display: flex;
+    justify-content: space-around; } }
+
+@media (max-width: 990px) {
+  .info-bord {
+    display: block;
+    margin: 0 auto; }
+    .info-bord div {
+      padding-top: 2rem; } }
 
 .lessons, .location {
   width: 65%;
@@ -261,23 +275,45 @@ section {
   .lessons div .schedule div {
     border: 1px solid #888; }
 
-.Shop-page {
-  max-width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center; }
-  .Shop-page div {
-    padding: 1rem;
-    border: 1px solid #222;
-    margin: 1.5rem;
-    width: 27%; }
-    .Shop-page div img {
-      width: 30%;
-      height: auto; }
-    .Shop-page div a {
-      padding: 1rem; }
-  .Shop-page div:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+@media (min-width: 891px) {
+  .Shop-page {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center; }
+    .Shop-page div {
+      padding: 1rem;
+      border: 1px solid #222;
+      margin: 1.5rem;
+      width: 27%; }
+      .Shop-page div img {
+        width: 30%;
+        height: auto; }
+      .Shop-page div a {
+        padding: 1rem; }
+    .Shop-page div:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); } }
+
+@media (max-width: 890px) {
+  .Shop-page {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
+    .Shop-page div {
+      margin: 0.5rem auto;
+      padding: 1rem;
+      border: 1px solid #222;
+      padding: 1.5rem;
+      width: 80%; }
+      .Shop-page div img {
+        width: 30%;
+        height: auto; }
+      .Shop-page div a {
+        padding: 1rem; }
+    .Shop-page div:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); } }

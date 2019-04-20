@@ -1,26 +1,53 @@
-.Shop-page{
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
-    text-align: center;
-    div{ 
-        padding: 1rem;
-        border: 1px solid #222;
-        margin: 1.5rem;
-        width: 27%;
-        img{
-            width: 30%;
-            height: auto;
-        }
-        a{
+@media (min-width: 891px) {
+    .Shop-page{
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly; 
+        text-align: center;
+        div{ 
             padding: 1rem;
+            border: 1px solid #222;
+            margin: 1.5rem;
+            width: 27%;
+            img{
+                width: 30%;
+                height: auto;
+            }
+            a{
+                padding: 1rem;
+            }
         }
+        div:hover{
+            transform:scale(1.2);
+        }
+        
     }
-    div:hover{
-        transform:scale(1.2);
-    }
-    
 }
-
+@media (max-width:  890px ) {
+    .Shop-page{
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        div{ 
+            margin:0.5rem auto;
+            padding: 1rem;
+            border: 1px solid #222;
+            padding: 1.5rem;
+            width: 80%;
+            img{
+                width: 30%;
+                height: auto;
+            }
+            a{
+                padding: 1rem;
+            }
+        }
+        div:hover{
+            transform:scale(1.2);
+        }
+        
+    } 
+}

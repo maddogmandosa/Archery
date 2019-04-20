@@ -2,20 +2,34 @@ header {
     padding: 1rem;
     background: #444;
     color: #fff;
+    
     .inner{
         align-items: center;
     }
+
     a, li{
         text-decoration: none;
     }
 
     .site-header{
-        display: flex;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 80%;
-        margin: 0 auto;
-        align-items: center;
-        
+       
+    }
+    
+    @media (min-width: 991px) {
+        .site-header{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            align-items: center;
+            
+        }
+    }
+    @media (max-width:  990px ) {
+        .site-header{
+            display: block;
+            margin: 0 auto;
+        }  
     }
 }
